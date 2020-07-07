@@ -13,4 +13,4 @@ for i in range(0, N):
     rank.append(count)
 
 for i in rank:
-    print(i,end=" ")
+    print(i, end=" ")
