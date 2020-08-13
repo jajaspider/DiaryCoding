@@ -13,3 +13,4 @@ for _ in range(0, T):
             n = n * 3 + 1
             hailstone.append(int(n))
     print(max(hailstone))
+
