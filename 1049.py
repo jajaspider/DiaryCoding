@@ -1,3 +1,4 @@
+# 조건 추가
 import sys
 
 N, M = map(int, sys.stdin.readline().split())
