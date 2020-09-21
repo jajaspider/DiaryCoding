@@ -11,7 +11,7 @@ for _ in range(0, M):
 if N > 6:
     x = N // 6
     y = N % 6
-    price = [(x + 1) * six, x * six + y * one]
+    price = [(x + 1) * six, x * six + y * one, N*one]
     print(min(price))
 else:
     print(six if six < N * one else N * one)
