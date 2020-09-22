@@ -1,14 +1,15 @@
 import sys
 
 N = int(sys.stdin.readline())
-multi = 1.0
-Nmax = -1
+Ns = []
 for _ in range(0, N):
-    inputN = float(sys.stdin.readline())
-    multi *= inputN
-    if multi > Nmax:
-        Nmax = multi
-    if multi < 1.0:
-        multi = 1.0
+    Ns.append(float(sys.stdin.readline()))
 
-print('%.3f' % round(Nmax, 4))
+Nmax = 0
+for i in range(0, N):
+    multi = 1
+    for j in range(i, N):
+        multi *= Ns[j]
+        Nmax = multi if Nmax < multi else Nmax
+
+print('%.3f' % Nmax)
